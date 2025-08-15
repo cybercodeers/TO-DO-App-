@@ -1,0 +1,28 @@
+body{
+/* background:url(372657.jpg); */
+/* background-size: 1999px; */
+background-image:url(372657.jpg);
+}
+
+.main{
+margin-left: 490px;
+margin-top: 260px;
+}
+
+.input{
+    margin-left: 40px;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.btn{
+    margin-left: 30px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.container{
+margin-left: 60px;
+margin-bottom: 30px;
+font-size: 40px;
+}
