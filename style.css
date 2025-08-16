@@ -1,28 +1,75 @@
-body{
-/* background:url(372657.jpg); */
-/* background-size: 1999px; */
-background-image:url(372657.jpg);
+body {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main{
-margin-left: 490px;
-margin-top: 260px;
+.main {
+    flex-direction: column;
+    margin-top: 90px;
+    border: 2px solid black;
+    border-radius:30px ;
+    padding: 7px ;
+    padding-top: 23px ;
+    box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 }
 
-.input{
+#input {
     margin-left: 40px;
-    padding: 6px;
+    padding: 8px;
     border-radius: 6px;
 }
 
-.btn{
-    margin-left: 30px;
-    padding: 6px;
+.btn {
+    margin-left: 5px;
+    padding: 8px;
     border-radius: 10px;
 }
 
-.container{
-margin-left: 60px;
-margin-bottom: 30px;
-font-size: 40px;
+.container {
+    margin-left: 60px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    border: 260px black;
+}
+
+.editBtn {
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    font-size: 15px;
+
+}
+
+.deletebutton {
+    border: none;
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.list {
+    list-style: none;
+    background-color: rgb(255, 253, 253);
+    width: 200px;
+    padding: 5px;
+    padding-left: 30px;
+    margin-right: 50px;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#list-item {
+    height: 290px !important;
+    overflow-y: auto;
+    width: 300px;
+}
+
+.items {
+    flex-direction: row;
 }
