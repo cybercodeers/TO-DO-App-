@@ -18,6 +18,7 @@ function AddEelement() {
      var editbutton = document.createElement("button")
      var edittext = document.createTextNode("✎")
      editbutton.appendChild(edittext)
+     editbutton.setAttribute("onclick","edited(this)")
      li.appendChild(editbutton)
      editbutton.setAttribute("class","editBtn")
      
@@ -26,9 +27,23 @@ function AddEelement() {
      var deletetext = document.createTextNode("🗑️")
      deletebutton.appendChild(deletetext)
      li.appendChild(deletebutton)
+deletebutton.setAttribute("onclick","deleted(this)")
      deletebutton.setAttribute("class","deletebutton")
 
+
 }
+function deleted(element){
+element.parentElement.remove()
+}
+function edited(element){
+var editvalue =prompt("what do you want to change")
+element.parentElement.firstChild.nodeValue=editvalue
+}
+
+
+
+
+
 
 function clearAll(){
      list.innerHTML=""
